@@ -70,7 +70,7 @@ def cave_riddle(enemy, items):
     answer = input("I am the beginning of everything the end of everywhere.\n"
                    "I’m the beginning of eternity the end of time and space.\n"
                    "What am I?\n").lower()
-    if  answer == "e":
+    if answer == "e":
         items.append("Sword of Dawn")
         print_pause("magnificent light appears from nowhere")
         print_pause("when your sight is back\n"
