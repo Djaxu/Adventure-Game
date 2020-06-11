@@ -34,7 +34,7 @@ def house(enemy, items):
         else:
             print_pause("oh come on it was simple choice\n"
                         "too little too late now your dead")
-            play_again(items)
+            play_again()
 
 
 def cave(enemy, items):
@@ -95,11 +95,11 @@ def fight(enemy, items):
                     "not only "
                     f"not hert yourself but also kill {enemy}\n")
         print_pause("Good job I didnt expect this oh well ;]")
-        play_again(items)
+        play_again()
     else:
         print_pause("let me guess you thought you could win ha \n"
                     "guess again ")
-        play_again(items)
+        play_again()
 
 
 def choose_action(enemy, items):
@@ -116,9 +116,8 @@ def choose_action(enemy, items):
         choose_action(enemy, items)
 
 
-def play_again(items):
+def play_again():
     print_pause("GAME OVER")
-    items = []
     choice = input("Do you want to play again yes or no   ")
     if "yes" in choice:
         main()
@@ -127,8 +126,7 @@ def play_again(items):
     else:
         print_pause("still dont get how simple yes or no works \n"
                     "!COME ON!")
-        play_again(items)
-    return items
+        play_again()
 
 
 def main():
